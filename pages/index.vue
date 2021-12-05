@@ -1,9 +1,11 @@
 <template>
-  <section></section>
+  <section>index</section>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+  import Vue from 'vue'
 
-export default Vue.extend({})
+  export default Vue.extend({
+    layout: 'default',
+  })
 </script>
