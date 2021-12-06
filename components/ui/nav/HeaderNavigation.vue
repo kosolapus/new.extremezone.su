@@ -31,9 +31,9 @@
               >
                 {{ route.title }}
               </component>
-              <ul v-if="!!route.children" class="dropdown-menu position-absolute bg-transparent border-0">
-                <li v-for="(child, index) in route.children" :key="index">
-                  <nuxt-link :to="child.to">{{ child.title }}</nuxt-link>
+              <ul v-if="!!route.children" class="dropdown-menu position-absolute bg-dark border-0 p-1">
+                <li v-for="(child, index) in route.children" :key="index" class="w-100 text-white">
+                  <nuxt-link class="w-100 d-block p-2" :to="child.to">{{ child.title }}</nuxt-link>
                 </li>
               </ul>
             </li>
@@ -53,6 +53,22 @@
         {
           title: 'Маршруты',
           children: [
+            {
+              title: 'Маршрут 1',
+              to: '/routes/slug1',
+            },
+            {
+              title: 'Маршрут 1',
+              to: '/routes/slug1',
+            },
+            {
+              title: 'Маршрут 1',
+              to: '/routes/slug1',
+            },
+            {
+              title: 'Маршрут 1',
+              to: '/routes/slug1',
+            },
             {
               title: 'Маршрут 1',
               to: '/routes/slug1',

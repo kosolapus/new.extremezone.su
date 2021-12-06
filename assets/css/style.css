@@ -5215,7 +5215,7 @@ h3 .ct-socials {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 10px 13px;
-  top: -32px;
+  top: -10px;
   margin: 0 -12px;
   -webkit-transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
   transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
@@ -6665,7 +6665,7 @@ html:not(.mobile):not(.tablet) .flickr_badge_image:hover img {
 .ct-product-box__inner {
   background: white;
   color: #343434;
-  padding: 30px 0 20px;
+  padding: 0 0 20px;
   position: relative;
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -6732,8 +6732,7 @@ html:not(.mobile):not(.tablet) .flickr_badge_image:hover img {
 }
 
 .ct-product-box__image {
-  min-height: 240px;
-  padding: 0 30px;
+  max-height: 240px;
 }
 
 .ct-product-box__image img {
