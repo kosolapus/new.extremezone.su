@@ -1,12 +1,13 @@
 <template>
-  <section>
+  <section class="d-flex flex-column">
     <hero-component />
     <welcome-component />
-    <center-link />
     <catalog-component />
-    <special-prices />
     <park-component />
+    <center-link class="d-none d-md-block" />
     <reviews />
+    <special-prices />
+    <contact-component />
   </section>
 </template>
 
@@ -19,9 +20,11 @@
   import ParkComponent from '~/components/index/ParkComponent.vue'
   import SpecialPrices from '~/components/index/SpecialPrices.vue'
   import Reviews from '~/components/index/Reviews.vue'
+  import ContactComponent from '~/components/content/ContactComponent.vue'
 
   export default Vue.extend({
     components: {
+      ContactComponent,
       Reviews,
       SpecialPrices,
       ParkComponent,

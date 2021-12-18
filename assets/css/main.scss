@@ -1,3 +1,26 @@
+$primary:#f13232;
+$primary-light: #db4a4a;
+
+$main-gradient: linear-gradient($primary, $primary-light);
+
 html{
   font-size: 24px;
+  overflow-y: initial;
 }
+.header{
+  background: $main-gradient;
+  clip-path: polygon(0 0, 100% 0,  80% 0, 94% 45%, 75% 100%, 15% 100%, 0 15%);
+  margin: 2rem;
+  padding: 2rem;
+}
+body{
+  position: relative;
+  &.modal-open{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: visible;
+    pointer-events: none;
+  }
+}
+

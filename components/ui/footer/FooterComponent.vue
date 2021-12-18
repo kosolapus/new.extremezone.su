@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <!-- COLUMN-->
-          <div class="col-md-3 col-sm-6">
+          <div class="col-sm-6">
             <img src="assets/images/content/page-logo.png" alt="Footer Logo" />
             <p class="ct-u-padding-both-20 ct-u-font-size--16">
               Прокат квадроциклов в Воронеже в eXtremeZone – это прогулки на квадроциклах (BRP, CFMOTO, STELS) в
@@ -15,7 +15,7 @@
             </p>
             <ul class="ct-socials list-inline list-unstyled d-flex gap-2">
               <li class="ct-socials__item--facebook">
-                <a href="https://www.facebook.com/createITpl"><fa name="fa-facebook" /></a>
+                <a href="https://www.facebook.com/createITpl"><i class="fa fa-facebook" /></a>
               </li>
               <li class="ct-socials__item--twitter">
                 <a href="https://twitter.com/createitpl"><i class="fa fa-twitter"></i></a>
@@ -29,7 +29,7 @@
             </ul>
           </div>
           <!-- COLUMN-->
-          <div class="col-md-3 col-sm-6">
+          <div class="col-sm-6">
             <div class="widget">
               <h4 class="widget-title ct-u-padding-bottom-5">Контакты</h4>
             </div>
@@ -40,64 +40,28 @@
             </div>
             <div class="media">
               <div class="media-left">
-                <a href="tel:11234567890"><i class="fa fa-phone"></i></a>
+                <a href="tel:+7 (473) 232-17-62"><i class="fa fa-phone"></i></a>
               </div>
-              <div class="media-body media-middle"><a href="tel:11234567890">+1 123 456 7890</a></div>
+              <div class="media-body media-middle"><a href="tel:+7 (473) 232-17-62">+7 (473) 232-17-62</a></div>
+              <div class="media-left">
+                <a href="tel:+7 (910) 732-17-62"><i class="fa fa-phone"></i></a>
+              </div>
+              <div class="media-body media-middle"><a href="tel:+7 (910) 732-17-62">+7 (910) 732-17-62</a></div>
             </div>
             <div class="media">
               <div class="media-left">
-                <a href="mailto:example@example.com"><i class="fa fa-envelope-o"></i></a>
+                <nuxt-link to="/contact"><i class="fa fa-envelope-o"></i></nuxt-link>
               </div>
               <div class="media-body media-middle">
-                <a href="mailto:example@example.com" class="ct-u-color--motive">example@example.com</a>
+                <nuxt-link to="/contact" class="ct-u-color--motive">example@example.com</nuxt-link>
               </div>
             </div>
             <div class="media">
               <div class="media-left">
-                <a href="www.example.com" target="_blank"><i class="fa fa-globe"></i></a>
+                <nuxt-link to="/"><i class="fa fa-globe"></i></nuxt-link>
               </div>
               <div class="media-body media-middle">
-                <a href="www.example.com" target="_blank" class="ct-u-color--motive">www.example.com</a>
-              </div>
-            </div>
-          </div>
-          <!-- COLUMN-->
-          <div class="col-md-3 col-sm-6">
-            <div class="widget">
-              <div class="widget-inner">
-                <h4 class="widget-title">Quick Links</h4>
-                <ul>
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="shop.html">Shop</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- COLUMN-->
-          <div class="col-md-3 col-sm-6">
-            <div class="widget widget_news_letter">
-              <div class="widget-inner">
-                <h4 class="widget-title">Join newsletter</h4>
-                <p>Join our newsletter to get info about latest events and deals!</p>
-                <form
-                  action="assets/form/send.php"
-                  method="POST"
-                  data-email-subject="Sporta Newsletter"
-                  class="ct-js-validate ct-newsletter__form form-group"
-                >
-                  <input
-                    id="widget_newsletter"
-                    type="email"
-                    placeholder="Email Address"
-                    required="required"
-                    name="field[]"
-                    class="form-control"
-                  />
-                  <label for="widget_newsletter" class="sr-only">Email Address</label>
-                  <button type="submit" class="btn btn-motive">Join Now</button>
-                </form>
+                <nuxt-link to="/" class="ct-u-color--motive">extremezone.su</nuxt-link>
               </div>
             </div>
           </div>
@@ -107,14 +71,14 @@
     <div class="ct-footer-copyrights ct-u-background--white ct-u-scratches--top">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 text-center text-left-sm">
+          <div class="col-sm-6 text-center text-sm-start">
             <p class="ct-u-margin-bottom-0">
               &copy; {{ new Date().getFullYear() }} Shiftweb & eXtremeZone. Права защищены.
             </p>
           </div>
-          <div class="col-sm-6 text-center text-right-sm">
-            <ul class="list-inline d-flex gap-2 justify-content-end">
-              <li><a href="#">Политика конфиденциальности</a></li>
+          <div class="col-sm-6 text-center text-sm-end">
+            <ul class="list-inline">
+              <li><nuxt-link to="/policy">Политика конфиденциальности</nuxt-link></li>
             </ul>
           </div>
         </div>

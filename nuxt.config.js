@@ -17,13 +17,17 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        src: 'bootstrap/dist/js/bootstrap.min.js',
+        src: '/bootstrap/dist/js/bootstrap.min.js',
       },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['bootstrap/dist/css/bootstrap.css', '~/assets/css/style.css', '~/assets/css/main.scss'],
+
+  styleResources: {
+    scss: ['./assets/css/*.scss'],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -35,19 +39,28 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    [
-      '@nuxtjs/fontawesome',
-      {
-        component: 'fa',
-        suffix: true,
+    '@nuxtjs/fontawesome',
+  ],
+
+  serverMiddleware: [
+    { path: '/api', handler: require('body-parser').json() },
+    {
+      path: '/api',
+      handler: (req, res, next) => {
+        const url = require('url')
+        req.query = new url.Url(req.url, true).query
+        req.params = { ...req.query, ...req.body }
+        next()
       },
-    ],
+    },
+    { path: '/api', handler: '~/serverMiddleware/api-server.ts' },
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

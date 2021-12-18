@@ -1,19 +1,25 @@
 <template>
-  <section class="d-flex w-100 h-75 flex-grow-1 position-relative">
-    <img class="w-100" src="~/assets/images/slider-bg-1.jpg" />
-    <div class="position-absolute w-100 h-100 d-flex hero-container">
-      <div class="container">
-        <div class="row h-100">
-          <div class="col offset-4 align-items-center d-flex justify-content-center">
-            <h1 class="fw-bold">
-              <span>Квадропрогулки</span>
-              <br />
-              в любое время года
-            </h1>
+  <section class="hero-wrapper">
+    <section class="d-flex w-100 h-75 flex-grow-1 position-relative hero">
+      <img class="w-100 img" src="~/assets/images/slider-bg-1.jpg" height="70vh" />
+      <div class="position-absolute w-100 h-100 d-flex hero-container">
+        <div class="container">
+          <div class="row h-100">
+            <div class="col offset-sm-4 align-items-start d-flex flex-column justify-content-center">
+              <h1 class="fw-bold text-white">
+                <span>Квадропрогулки</span>
+                <br />
+                в любое время года
+              </h1>
+              <div class="actions">
+                <nuxt-link class="btn rounded-0 btn-lg btn-default-o" to="/book">Хочу участвовать!</nuxt-link>
+                <nuxt-link class="btn rounded-0 btn-lg btn-motive btn-lg" to="/book">Посмотреть видео</nuxt-link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 </template>
 
@@ -23,8 +29,21 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .hero-wrapper {
+    background-color: $primary;
+  }
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 40% 100%, 0% 85%);
+  }
   .hero-container {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.25);
+  }
+  .img {
+    height: calc(270 / 629 * 100vw);
+    width: 100vw;
+    box-sizing: border-box;
+    min-height: 90vh;
+    object-fit: cover;
   }
 </style>
