@@ -1,4 +1,7 @@
 export default {
+  server: {
+    port: process.env.$PORT || process.env.PORT || 3000, // default: 3000
+  },
   head: {
     title: 'fresh-ez',
     htmlAttrs: {
@@ -15,11 +18,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        src: '/bootstrap/dist/js/bootstrap.min.js',
-      },
-    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
