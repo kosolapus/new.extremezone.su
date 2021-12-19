@@ -1,7 +1,11 @@
 <template>
   <section class="hero-wrapper">
     <section class="d-flex w-100 h-75 flex-grow-1 position-relative hero">
-      <img class="w-100 img" src="~/assets/images/slider-bg-1.jpg" height="70vh" role="presentation" />
+      <picture class="w-100 img" role="presentation" height="70vh">
+        <source type="image/webp" srcset="~/assets/images/slider-bg-1.webp" />
+        <source type="image/jpeg" srcset="~/assets/images/slider-bg-1.jpg" />
+        <img class="w-100 img" src="~/assets/images/slider-bg-1.jpg" height="70vh" />
+      </picture>
       <div class="position-absolute w-100 h-100 d-flex hero-container">
         <div class="container">
           <div class="row h-100">

@@ -1,8 +1,10 @@
 <template>
   <section class="tech-item" :class="{ inverted: inverted }">
     <div class="row p-4" :class="{ 'flex-row-reverse': inverted }">
-      <div v-if="item.img" class="col-5 d-flex flex-column justify-content-center">
-        <img class="tech-item__img" :src="item.img" :alt="item.name" />
+      <div v-if="$slots.image" class="col-5 d-flex flex-column justify-content-center">
+        <div class="tech-item__img">
+          <slot name="image" />
+        </div>
       </div>
       <div v-if="!item.img" class="d-none d-sm-block col-sm-2"></div>
       <div :class="['d-flex flex-column justify-content-center py-5', `col-sm-${item.img ? 6 : 8}`]">
