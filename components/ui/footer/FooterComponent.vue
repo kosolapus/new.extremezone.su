@@ -14,10 +14,19 @@
               настроением, полюбоваться природой и красивыми местами.
             </p>
             <div class="d-flex gap-2">
-              <a class="soc-item" href="https://www.facebook.com/createITpl"><fa :icon="['fab', 'facebook']" /></a>
-              <a class="soc-item" href="#"><fa :icon="['fab', 'vk']" /></a>
-              <a class="soc-item" href="#"><fa :icon="['fab', 'youtube']" /></a>
-              <a class="soc-item" href="#"><fa :icon="['fab', 'instagram']" /></a>
+              <a class="soc-item" target="_blank" href="https://vk.com/prokat_kvadrov_voronezh">
+                <fa :icon="['fab', 'vk']" />
+              </a>
+              <a
+                class="soc-item"
+                target="_blank"
+                href="https://www.youtube.com/channel/UC8MSXkuW8MZYUZt3tHL-x1Q/videos"
+              >
+                <fa :icon="['fab', 'youtube']" />
+              </a>
+              <a class="soc-item" target="_blank" href="https://www.instagram.com/prokat_kvadrov_voronezh/">
+                <fa :icon="['fab', 'instagram']" />
+              </a>
             </div>
           </div>
           <!-- COLUMN-->
@@ -45,7 +54,7 @@
                 <nuxt-link to="/contact"><i class="fa fa-envelope-o"></i></nuxt-link>
               </div>
               <div class="media-body media-middle">
-                <nuxt-link to="/contact" class="ct-u-color--motive">example@example.com</nuxt-link>
+                <nuxt-link to="/contact" class="ct-u-color--motive">2321762@mail.ru</nuxt-link>
               </div>
             </div>
             <div class="media">

@@ -9,7 +9,10 @@
       <p class="small" v-html="parsedDescription" />
     </div>
     <div class="container mb-4"><h2>Оставьте свою заявку и мы с вами свяжемся</h2></div>
-    <form-component />
+    <div class="mx-auto">
+      <form-component />
+    </div>
+
     <!-- Modal -->
     <modal v-if="modalShown" :shown="modalShown" @close="modalShown = false">
       <img :src="fullImage" class="lightbox" alt="" width="1px" height="1px" />
