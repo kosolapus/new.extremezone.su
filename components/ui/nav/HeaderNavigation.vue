@@ -3,9 +3,10 @@
     class="d-flex fixed-top transition"
     :class="{
       scrolled: isScrolled,
+      'mobile-open': flag.mobileOpen,
     }"
   >
-    <nav class="ct-menu flex-grow-1">
+    <nav class="flex-grow-1">
       <div class="navbar navbar-inverse py-0">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -13,7 +14,7 @@
               <img src="~/assets/images/page-logo.png" alt="eXtremezone Logo" class="logo-inverse" />
             </nuxt-link>
           </div>
-          <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+          <ul class="navbar-nav mb-2 mb-lg-0 flex-row d-none d-md-flex">
             <li
               v-for="(route, key) in routes"
               :key="key"
@@ -43,9 +44,50 @@
               </ul>
             </li>
           </ul>
+          <div
+            v-if="!flag.mobileOpen"
+            class="d-block d-md-none text-white ct-icon text-center"
+            @click="flag.mobileOpen = true"
+          >
+            <fa class="close-icon" :icon="['fas', 'bars']" />
+          </div>
         </div>
       </div>
     </nav>
+    <!-- Mobile Menu //-->
+    <div class="ct-menu-mobile">
+      <div class="ct-mobile-toggle">
+        <a class="ct-icon" @click="flag.mobileOpen = false">
+          <fa :icon="['fas', 'times']" class="close-icon" />
+        </a>
+      </div>
+      <div class="inner">
+        <div class="ct-menu-mobile__logo">
+          <img src="assets/images/content/page-logo.png" alt="SPORTA" />
+        </div>
+        <ul class="ct-menu-mobile__nav">
+          <li
+            v-for="(route, key) in routes"
+            :key="key"
+            role="presentation"
+            :class="['nav-item', 'pr-2', { dropdown: !!route.children }]"
+          >
+            <component
+              :is="route.to ? 'nuxt-link' : 'a'"
+              :to="route.to"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="px-2 py-3 text-white"
+              @click="flag.mobileOpen = false"
+            >
+              {{ route.title }}
+            </component>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -59,6 +101,7 @@
         isScrolled: false,
         flag: {
           scroll: false,
+          mobileOpen: false,
         },
       }
     },
@@ -109,5 +152,8 @@
   .dropdown-menu {
     max-height: 700px;
     overflow-y: auto;
+  }
+  .close-icon {
+    width: 20px;
   }
 </style>

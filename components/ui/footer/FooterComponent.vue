@@ -13,20 +13,12 @@
               квадропрогулки по маршрутам различной сложности, зарядиться массой новых впечатлений, отличным
               настроением, полюбоваться природой и красивыми местами.
             </p>
-            <ul class="ct-socials list-inline list-unstyled d-flex gap-2">
-              <li class="ct-socials__item--facebook">
-                <a href="https://www.facebook.com/createITpl"><i class="fa fa-facebook" /></a>
-              </li>
-              <li class="ct-socials__item--twitter">
-                <a href="https://twitter.com/createitpl"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="ct-socials__item--instagram">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="ct-socials__item--linkedin">
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
+            <div class="d-flex gap-2">
+              <a class="soc-item" href="https://www.facebook.com/createITpl"><fa :icon="['fab', 'facebook']" /></a>
+              <a class="soc-item" href="#"><fa :icon="['fab', 'vk']" /></a>
+              <a class="soc-item" href="#"><fa :icon="['fab', 'youtube']" /></a>
+              <a class="soc-item" href="#"><fa :icon="['fab', 'instagram']" /></a>
+            </div>
           </div>
           <!-- COLUMN-->
           <div class="col-sm-6">
@@ -95,4 +87,15 @@
   }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+  .soc-item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: $primary;
+    }
+  }
+</style>
