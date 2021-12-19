@@ -4,10 +4,10 @@
       <h2 class="text-center">Телефоны</h2>
 
       <div class="row my-4">
-        <div class="col">
+        <div class="col-12 col-md">
           <h3 class="fs-5 text-center"><a href="tel:+7 (910) 732-17-62">+7 (910) 732-17-62</a></h3>
         </div>
-        <div class="col">
+        <div class="col-12 col-md">
           <h3 class="fs-5 text-center"><a href="tel:+7 (473) 232-17-62">+7 (473) 232-17-62</a></h3>
         </div>
       </div>
