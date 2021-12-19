@@ -28,7 +28,7 @@
     "vk-io": "^4.4.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.7",
+    "@babel/eslint-parser": "^7.16.5",
     "@nuxt/types": "^2.15.7",
     "@nuxtjs/eslint-config": "^8.0.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
