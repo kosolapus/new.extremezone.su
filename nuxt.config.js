@@ -21,7 +21,31 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favicon/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        sizes: '32x32',
+        type: 'image/png',
+        href: '/favicon/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        sizes: '16x16',
+        type: 'image/png',
+        href: '/favicon/favicon-16x16.png',
+      },
+      { rel: 'manifest', href: '/favicon/site.webmanifest' },
+      {
+        rel: 'mask-icon',
+        color: '#5bbad5',
+        href: '/favicon/safari-pinned-tab.svg',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
