@@ -81,7 +81,7 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: 'AIzaSyC1aPeg3cKHUkMN-b3NXE4sr7w6t6BHL9M',
+          apiKey: process.env.apiKey,
           authDomain: 'extremezone-124ac.firebaseapp.com',
           projectId: 'extremezone-124ac',
           storageBucket: 'extremezone-124ac.appspot.com',
