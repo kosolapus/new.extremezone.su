@@ -5,7 +5,9 @@ export default {
     timing: false,
   },
   head: {
-    title: 'fresh-ez',
+    title: 'eXtremeZone - прокат квадроциклов',
+    description:
+      'Приезжайте в гости в eXtremeZone с близкими, с друзьями и коллегами! Мы гарантируем, что у нас вам не будет скучно!',
     htmlAttrs: {
       lang: 'en',
     },

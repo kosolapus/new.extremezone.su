@@ -55,7 +55,7 @@
         this.$mail
           .send({
             subject: 'Заявка со страницы ' + this.$store.getters.title,
-            text: `Имя: ${this.name} \r\nКонтактная информация: ${this.name} \r\nСообщение: ${this.message}`,
+            text: `Имя: ${this.name} \r\nКонтактная информация: ${this.contact} \r\nСообщение: ${this.message}`,
           })
           .then(() => {
             this.sent = true
