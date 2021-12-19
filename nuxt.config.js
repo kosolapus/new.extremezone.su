@@ -1,6 +1,6 @@
 export default {
   server: {
-    port: process.env.$PORT || 8080, // default: 8080
+    port: process.env.PORT || 8080, // default: 8080
     host: '0.0.0.0', // default: localhost,
     timing: false,
   },
