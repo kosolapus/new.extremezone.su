@@ -60,6 +60,40 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    [
+      'nuxt-mail',
+      {
+        message: {
+          to: 'kosolapus@gmail.com',
+          from: 'admin@schdlr.io',
+        },
+        smtp: {
+          host: 'smtp.yandex.ru',
+          port: 465,
+          auth: {
+            user: 'admin@schdlr.io',
+            pass: process.env.mailpass,
+          },
+        },
+      },
+    ],
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyC1aPeg3cKHUkMN-b3NXE4sr7w6t6BHL9M',
+          authDomain: 'extremezone-124ac.firebaseapp.com',
+          projectId: 'extremezone-124ac',
+          storageBucket: 'extremezone-124ac.appspot.com',
+          messagingSenderId: '23892914343',
+          appId: '1:23892914343:web:f6fe36779b8e1abc1dab82',
+          measurementId: 'G-KHQT5YEVJ6',
+        },
+        services: {
+          firestore: true,
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

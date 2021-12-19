@@ -62,9 +62,6 @@
         </a>
       </div>
       <div class="inner">
-        <div class="ct-menu-mobile__logo">
-          <img src="assets/images/content/page-logo.png" alt="SPORTA" />
-        </div>
         <ul class="ct-menu-mobile__nav">
           <li
             v-for="(route, key) in routes"
@@ -107,7 +104,11 @@
     },
     async fetch() {
       const response = await this.$axios.$get('/api/vk/get')
-      this.routes = [{ title: 'Главная', to: '/' }, { title: 'Фотогалерея' }, { title: 'Контакты' }]
+      this.routes = [
+        { title: 'Главная', to: '/' },
+        { title: 'Фотогалерея', to: '/gallery' },
+        { title: 'Контакты', to: '/contact' },
+      ]
       if (response.count) {
         this.routes.splice(1, 0, {
           title: 'Маршруты',
@@ -155,5 +156,8 @@
   }
   .close-icon {
     width: 20px;
+  }
+  .ct-mobile-toggle {
+    z-index: 2;
   }
 </style>

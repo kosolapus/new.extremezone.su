@@ -1,7 +1,7 @@
 <template>
   <section class="hero-wrapper">
     <section class="d-flex w-100 h-75 flex-grow-1 position-relative hero">
-      <img class="w-100 img" src="~/assets/images/slider-bg-1.jpg" height="70vh" />
+      <img class="w-100 img" src="~/assets/images/slider-bg-1.jpg" height="70vh" role="presentation" />
       <div class="position-absolute w-100 h-100 d-flex hero-container">
         <div class="container">
           <div class="row h-100">
@@ -12,8 +12,7 @@
                 в любое время года
               </h1>
               <div class="actions">
-                <nuxt-link class="btn rounded-0 btn-lg btn-default-o" to="/book">Хочу участвовать!</nuxt-link>
-                <nuxt-link class="btn rounded-0 btn-lg btn-motive btn-lg" to="/book">Посмотреть видео</nuxt-link>
+                <nuxt-link class="btn rounded-0 btn-lg btn-motive" to="/contact">Хочу участвовать!</nuxt-link>
               </div>
             </div>
           </div>
