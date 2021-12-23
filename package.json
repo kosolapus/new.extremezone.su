@@ -24,7 +24,7 @@
     "core-js": "^3.20.0",
     "firebase": "^9.6.1",
     "nuxt": "^2.15.7",
-    "nuxt-mail": "^3.0.12",
+    "nuxt-mail": "^3.0.14",
     "vk-io": "^4.4.0"
   },
   "devDependencies": {
