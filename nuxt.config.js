@@ -5,7 +5,7 @@ export default {
     timing: false,
   },
   head: {
-    title: 'eXtremeZone - прокат квадроциклов',
+    title: 'eXtremeZone - прокат квадроциклов в Воронеже, квадротуры и экстремальные путешествия',
     description:
       'Приезжайте в гости в eXtremeZone с близкими, с друзьями и коллегами! Мы гарантируем, что у нас вам не будет скучно!',
     htmlAttrs: {
