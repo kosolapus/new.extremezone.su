@@ -6,7 +6,6 @@
         <div class="row">
           <!-- COLUMN-->
           <div class="col-sm-6">
-            <img src="assets/images/content/page-logo.png" alt="Footer Logo" />
             <p class="ct-u-padding-both-20 ct-u-font-size--16">
               Прокат квадроциклов в Воронеже в eXtremeZone – это прогулки на квадроциклах (BRP, CFMOTO, STELS) в
               Воронеже. Не знаете чем заняться в будни или в выходные? Жаждите новых эмоций? Предлагаем увлекательные

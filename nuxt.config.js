@@ -87,6 +87,16 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '25950371',
+        webvisor: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      },
+    ],
+    [
       'nuxt-mail',
       {
         message: {

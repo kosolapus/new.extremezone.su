@@ -55,9 +55,9 @@
       showMore: false,
     }),
     async fetch() {
-      const response = await this.$axios.$get('/api/vk/get')
-      if (response.count) {
-        this.products = response.items.splice(0, 12)
+      const response = await this.$store.dispatch('routes/getRoutes', { $axios: this.$axios })
+      if (response.length) {
+        this.products = [...response].splice(0, 12)
       }
     },
   }

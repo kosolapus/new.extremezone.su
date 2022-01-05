@@ -103,17 +103,17 @@
       }
     },
     async fetch() {
-      const response = await this.$axios.$get('/api/vk/get')
+      const response = await this.$store.dispatch('routes/getRoutes', { $axios: this.$axios })
       this.routes = [
         { title: 'Главная', to: '/' },
         { title: 'Фотогалерея', to: '/gallery' },
         { title: 'Контакты', to: '/contact' },
       ]
-      if (response.count) {
+      if (response.length) {
         this.routes.splice(1, 0, {
           title: 'Маршруты',
           to: '/routes',
-          children: response.items.map((item) => ({
+          children: response.map((item) => ({
             title: item.title,
             to: `/routes/${item.id}`,
           })),
