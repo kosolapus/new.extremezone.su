@@ -9114,10 +9114,10 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-mail@^3.0.16:
-  version "3.0.16"
-  resolved "https://registry.yarnpkg.com/nuxt-mail/-/nuxt-mail-3.0.16.tgz#3d9aaec1ad511cb8d75c648e140a437fbcc8926d"
-  integrity sha512-Z2OE2fD63Rz8aNivBKEUj4LyVGPwoEFVhF0hvNS+1Nesiv3E1IxBXR8i99CCghrMDaGMsqrzpqpnQsKei6lDUw==
+nuxt-mail@^3.0.18:
+  version "3.0.18"
+  resolved "https://registry.yarnpkg.com/nuxt-mail/-/nuxt-mail-3.0.18.tgz#8bdba28d972fd7f39b72d9e9c88f04d53278a445"
+  integrity sha512-bu3dXA16VgUZcvmGnzCYseVfczng/2dCP2Vu5s89uszbkWjnzuwMyC3dRVjcg9FuxOi5sYftffp2bpoobssLMw==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     express "^4.17.1"
