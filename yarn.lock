@@ -2159,10 +2159,10 @@
     glob-all "^3.2.1"
     sass-resources-loader "^2.2.4"
 
-"@nuxtjs/yandex-metrika@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/yandex-metrika/-/yandex-metrika-1.3.0.tgz#a9e64e5bf3db0d96950fee9e9c88d680acf0d52e"
-  integrity sha512-RrIrvK8fLYnRvpGuKKlfO4TAlk99kygi42lJWTnptom1WrPZA6deY+C1qPRjq+l9BA2iFduWhRH38wyPWoJUWA==
+"@nuxtjs/yandex-metrika@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/yandex-metrika/-/yandex-metrika-1.4.0.tgz#045dcfd6d8a43f4f869ecdae0b1062bf9d19fb83"
+  integrity sha512-6c5w3oV86575G0/GGJPnaREDCDYKPg5e7P7BiEk4UlSQce56Pqnaolaa8D8A6Ds/KJafZDGcAkc0z65F1anA5A==
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
