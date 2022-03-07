@@ -1,4 +1,4 @@
-FROM node:12 as builder
+FROM node:17 as builder
 
 WORKDIR /usr/src/app/
 
@@ -8,7 +8,7 @@ RUN yarn
 
 RUN yarn build
 
-FROM node:12
+FROM node:17
 
 WORKDIR /usr/src/app/
 
