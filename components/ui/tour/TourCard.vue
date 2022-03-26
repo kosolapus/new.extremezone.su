@@ -18,7 +18,6 @@
         </nuxt-link>
         <div class="ct-product-box__price">
           <span class="ct-product-box__price--default ct-product__price">от {{ product.price.amount / 100 }}₽</span>
-          <span class="ct-product-box__price--old">{{ (product.price.amount / 100) * 1.28 }}₽</span>
         </div>
       </div>
       <div class="ct-product-box__footer mt-auto mb-0 d-flex justify-content-center">

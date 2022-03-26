@@ -23,8 +23,8 @@
               >
                 <fa :icon="['fab', 'youtube']" />
               </a>
-              <a class="soc-item" target="_blank" href="https://www.instagram.com/prokat_kvadrov_voronezh/">
-                <fa :icon="['fab', 'instagram']" />
+              <a class="soc-item" target="_blank" href="https://t.me/eXtremeZone_voronezh">
+                <fa :icon="['fab', 'telegram-plane']" />
               </a>
             </div>
           </div>
