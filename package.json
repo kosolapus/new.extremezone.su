@@ -43,7 +43,7 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-nuxt": "2.0.0",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-vue": "7.20.0",
+    "eslint-plugin-vue": "8.6.0",
     "fibers": "5.0.1",
     "jest": "27.4.6",
     "prettier": "2.5.1",
