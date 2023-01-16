@@ -46,7 +46,7 @@
     "eslint-plugin-vue": "7.20.0",
     "fibers": "5.0.1",
     "jest": "27.4.6",
-    "prettier": "2.5.1",
+    "prettier": "2.8.3",
     "sass": "1.45.2",
     "sass-loader": "10.2.1",
     "ts-jest": "27.1.0",
