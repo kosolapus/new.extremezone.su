@@ -13,6 +13,16 @@
             <nuxt-link to="/" class="navbar-brand">
               <img src="~/assets/images/page-logo.png" alt="eXtremezone Logo" class="logo-inverse" />
             </nuxt-link>
+
+            <div>
+              <iframe
+                src="https://yandex.ru/sprav/widget/rating-badge/176404845356?type=rating"
+                width="150"
+                height="50"
+                frameborder="0"
+                style="margin-top: 20px"
+              ></iframe>
+            </div>
           </div>
           <ul class="navbar-nav mb-2 mb-lg-0 flex-row d-none d-md-flex">
             <li
@@ -159,5 +169,16 @@
   }
   .ct-mobile-toggle {
     z-index: 2;
+  }
+
+  .navbar-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
   }
 </style>
