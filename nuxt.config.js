@@ -101,13 +101,13 @@ export default {
       {
         message: {
           to: 'kosolapus@gmail.com',
-          from: 'admin@schdlr.io',
+          from: 'contact@zebrrra.ru',
         },
         smtp: {
           host: 'smtp.yandex.ru',
           port: 465,
           auth: {
-            user: 'admin@schdlr.io',
+            user: 'contact@zebrrra.ru',
             pass: process.env.mailpass,
           },
         },
