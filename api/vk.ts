@@ -6,12 +6,11 @@ const vk = new VK({
 
 export const get = async () => {
   try {
-    const products = await vk.api.market.get({
+    return await vk.api.market.get({
       owner_id: -61899323,
       count: 50,
       album_id: 0,
     })
-    return products
   } catch (e) {
     console.error(e)
   }
