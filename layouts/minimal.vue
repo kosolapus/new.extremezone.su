@@ -9,6 +9,16 @@
 <script>
   export default {
     name: 'MinimalLayout',
+    head() {
+      return {
+        link: [
+          {
+            rel: 'canonical',
+            href: 'https://extremezone.su' + this.$route.path,
+          },
+        ],
+      }
+    },
   }
 </script>
 

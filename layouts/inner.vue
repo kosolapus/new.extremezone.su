@@ -14,5 +14,15 @@
   export default {
     name: 'Inner',
     components: { InnerHeader, FooterComponent, HeaderNavigation },
+    head() {
+      return {
+        link: [
+          {
+            rel: 'canonical',
+            href: 'https://extremezone.su' + this.$route.path,
+          },
+        ],
+      }
+    },
   }
 </script>
