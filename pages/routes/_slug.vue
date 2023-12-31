@@ -27,11 +27,13 @@
     name: 'RouteItem',
     components: { FormComponent, Modal },
     layout: 'inner',
-    async asyncData({ $axios, route, redirect, store }) {
+    async asyncData({ $axios, route, error, store }) {
       const id = route.params.slug
       const response = await $axios.$get(`/api/vk/getById?ids=${id}`)
       if (!response?.count) {
-        redirect('/404')
+        return error({
+          statusCode: 404,
+        })
       }
       store.dispatch('setTitle', response.items[0].title)
       return {
