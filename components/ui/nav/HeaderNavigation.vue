@@ -16,7 +16,7 @@
 
             <div>
               <iframe
-                src="https://yandex.ru/sprav/widget/rating-badge/176404845356?type=rating"
+                src="https://yandex.ru/sprav/widget/rating-badge/202653998478?type=rating"
                 width="150"
                 height="50"
                 frameborder="0"

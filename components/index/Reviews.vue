@@ -8,7 +8,7 @@
           Однако, если Вы хотите увидеть больше свежих оценок, Вы можете посетить наши странички в соцсетях
         </div>
         <div class="col-12 col-md-6">
-          <iframe class="reviews__frame" src="https://yandex.ru/maps-reviews-widget/176404845356?comments"></iframe>
+          <iframe class="reviews__frame" src="https://yandex.ru/maps-reviews-widget/202653998478?comments"></iframe>
         </div>
         <div class="col-12 col-md-6">
           <img src="~/assets/images/google-reviews.png" alt="Отзывы гугл" />
